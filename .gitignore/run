@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix='s!')
 @bot.command()
 async def doomsday():
     try:
-        if message.attachments[0].height > 0:
+        if message.attachments[0].height > 0 or not message.content.lower().endswith((".png", ".jpg", ".jpeg", ".gif")):
             pass
         else:
             await message.delete()
