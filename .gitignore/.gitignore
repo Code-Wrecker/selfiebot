@@ -1,0 +1,17 @@
+import discord
+from discord.ext import commands
+import asyncio
+
+bot = commands.Bot(command_prefix='s!')
+
+@bot.command()
+async def doomsday():
+    try:
+        if message.attachments[0].height > 0:
+            pass
+        else:
+            await message.delete()
+    except:
+        await message.delete()
+
+bot.run('MzczODUxMTg2MTc4MDMxNjQ3.DNYvxg.i8ABY_vp2oAzVCzPUJJ3fjMZV4s')
